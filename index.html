@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-search</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light bg-light.bg-gradient p-3 fixed-top  ">
+                <div class="container">
+                      <a class="navbar-brand fw-bold fs-3 " href="#"> <img src="/assest/images/logo.png" alt="">Phone Bazer</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+        
+                      
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="d-flex ms-5 w-50" role="search">
+                            <input id="search-field" class="form-control me-2" type="search" placeholder="search your phone name"  aria-label="Search" > 
+                          </form>
+                          <button onclick="search()" class="fw-bold rounded bg-info text-bg-primary ">search</button>
+        
+        
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#shoes">apple</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Bags">oppo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                          </li>
+                      </div>
+                    </div>
+                  </nav>
+    </header>
+    
+          <!-- phone search result -->
+
+          <main class="">
+            <section class="container">
+                <div class="">
+                    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                    </div>
+                </div>
+              </section>
+
+              
+            Modal
+            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="DetailModal"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="phone-details" class="modal-body border-0">
+                        
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+          </main>
+          <script src="/phone.js"></script>
+          <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
